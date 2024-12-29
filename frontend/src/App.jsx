@@ -5,6 +5,7 @@ import HomeLayout from "./layouts/HomeLayout"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import SSOCallback from "./pages/SSOCallback"
+import SignupPage from "./pages/SignupPage"
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
@@ -20,7 +21,7 @@ function App() {
           <Route element={<HomeLayout />}>
             <Route path="/" element={<div className="p-4 text-xl text-center text-blue-700">Hello World</div>} />
             <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<div className="p-4 text-xl text-center text-blue-700">Hello World</div>} />
+            <Route path="/signup" element={<SignupPage />} />
             <Route path="/home" element={<Home />} />
             <Route path="/sso-callback" element={<SSOCallback />}/>
           </Route>
